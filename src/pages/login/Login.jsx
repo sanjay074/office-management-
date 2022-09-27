@@ -18,11 +18,11 @@ const Login = () => {
 		navigate("/dashboard")
 	  }
 	}
-  return (
+  return(
     <section className="sec">
 		<div className="imagebox">
 			<img src={"../images/19197296.png"} alt="" />
-	       
+		
 		</div>
 		<div className="contentbox">
          
@@ -52,7 +52,6 @@ const Login = () => {
            <div className="inputBx">
 			<input type="submit" value="Login"/>
 		   </div>
-
 		 </form>
 		 </div>
 		</div>
