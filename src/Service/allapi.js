@@ -8,3 +8,18 @@ export const addClient = async (Client) => {
     })
   };
 
+export const getClient = async (client)=>{
+    return await axios.get( baseUrl+`/adminFindallClient`,client,{
+      headers:{
+        Authorization: `Bearer` + localStorage.getItem('token'),
+      }
+    })
+  };
+
+  // export const deleteClient = async (id,client)=>{
+  //   return await axios.delete( baseUrl+`/deleteClient/${id}`,client,{
+  //     headers:{
+  //       Authorization: `Bearer ` + localStorage.getItem('token'),
+  //     }
+  //   });
+  // }  

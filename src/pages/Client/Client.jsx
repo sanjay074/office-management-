@@ -7,10 +7,24 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
-import { useState } from "react";
+import {getClient} from "../../Service/allapi";
+import { useState,useEffect } from "react";
 
 const Client = () => {
     const [openModal,setOpenModal]=useState(false);
+    const [client,setClient] = useState([]);
+    useEffect(()=>{
+      getallClient();
+    },[]);
+
+  const getallClient = async ()=>{
+     try{
+     const response  = await getClient();
+     setClient(response.data.getClientuser)
+     }catch(error){
+       console.log(error);
+     }
+  }   
     
   return (
     <div className="loneReq">
@@ -57,13 +71,15 @@ const Client = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                           <td>Clients unahw</td>
+                      {client.map((client, index) => (
+                        <tr key={client._id}>
+                           <td>{client.company_name}</td>
                             <td><EditIcon />&nbsp;
                             <CloseIcon /></td>
 
-                            <td style={{ color:"green"}}>Active</td>
+                            <td style={{ color:"green"}}>{client.status}</td>
                         </tr>
+                         ))}
                       </tbody>
                     </table>
                     {/* Table End */}
