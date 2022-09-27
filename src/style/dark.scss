@@ -1,0 +1,100 @@
+
+body {
+  background-color: rgb(234, 232, 229);
+}
+.app.dark {
+  background-color: rgb(232, 229, 229);
+  color: rgb(156, 156, 156);
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    background-color: #111;
+
+    .tableCell {
+      color: gray;
+    }
+  }
+  .home .homeContainer {
+    flex: 6 1;
+    background-color: #332c2c;
+}
+.lonenav {
+  flex: 6 1;
+  background-color: #111;
+}
+
+  .navbar {
+    color: rgb(230, 220, 220);
+    background-color: #111;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+    }
+  }
+  .widget {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1;
+    padding: 10px;
+    box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
+    border-radius: 10px;
+    height: 100px;
+    background-color: #000000;
+}
+
+  .sidebar {
+    background-color: #000000;
+    border-right:1px solid  rgb(173, 123, 123);
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+    hr {
+      border-color: #333;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+
+        .icon {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: gray;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: gray;
+        border: none;
+      }
+    }
+  }
+
+  input{
+      background-color: transparent;
+  }
+  .home .homeContainer .widgets, .home .homeContainer .charts {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #111;
+  }
+}
+
+

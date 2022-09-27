@@ -1,0 +1,181 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+.sec{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+section .imagebox{
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  /* background: url("../images/19197296.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #B4D4FC;
+}
+section .imagebox img{
+  width: 100%;
+  height: 100%;
+}
+section .contentbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  background: #d2e1d6 !important;
+  
+}
+
+section .contentbox .logo{
+  width: 27%;
+  height: 19%;
+  align-items: center;
+  margin: -70px auto 20px auto;
+}
+
+section .contentbox h2{
+  color:#000000;
+  font-family: Poppins;
+  font-weight: 500;
+  margin: 0 auto 20px auto;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+section .contentbox .formBx{
+  width: 80%;
+  align-items: center;
+}
+section .contentbox .formBx .inputBx{
+  margin-bottom: 20px;
+
+}
+section .contentbox .formBx .inputBx span{
+  
+  margin-bottom: 20px;
+  font-size: 20px;
+
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #000000;
+  font-family: Poppins;
+}
+section .contentbox .formBx .inputBx input{
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  
+}
+section .contentbox .formBx .inputBx input[type="submit"]{
+  background: #2980B9;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  margin-top: 20px;
+}
+section .contentbox .formBx .remember{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+section .contentbox .formBx .remember label{
+  color:#000000;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family:  Poppins;
+}
+section .contentbox .formBx .remember span{
+  color:#000000;
+  letter-spacing: 1px;
+  /* font-weight: 400; */
+  font-family:  Poppins;
+}
+
+@media (max-width: 768px){
+ 
+  section .imagebox {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    /* background: url(../images/19197296.png); */
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #B4D4FC;
+    display: none;
+}
+section .contentbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #b8c9bd;
+  z-index: 1;
+}
+  
+}
+
+@media (max-width: 355px){
+
+  section .contentbox .logo {
+    width: 40%;
+    height: 15%;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+section .contentbox h2 {
+  color: #000000;
+  font-family: Poppins;
+  font-weight: 500;
+  margin: 0 auto 20px 24px;
+  font-size: 18px;
+}
+
+section .contentbox .formBx .inputBx input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+section .contentbox .formBx .remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  font-size: 15px;
+  flex-direction: column;
+}
+section .contentbox .formBx .remember label {
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: Poppins;
+  margin-bottom: 10px;
+}
+}
